@@ -44,7 +44,6 @@ ul li:hover ul{
     visibility: visible;
     opacity: 1;
 }
-
 ul li ul li a{
     text-decoration: none;
     color: #fff;
@@ -52,7 +51,12 @@ ul li ul li a{
     padding: 13px 18px;
     display: inline-block;
 }
-.button-1::before{
+.button-0{
+    position: relative;
+    z-index: 99;
+    overflow: hidden;
+}
+.button-0::before{
     content: "";
     position: absolute;
     top: 0;
@@ -64,10 +68,10 @@ ul li ul li a{
     transition: .4s;
     z-index: -1;
 }
-.button-1:hover::before{
+.button-0:hover::before{
     width: 100%;
 }
-.button-1:hover{
+.button-0:hover{
     color: #fff !important;
 }
 .slaider{
@@ -227,31 +231,31 @@ ul li ul li a{
     left: 615px;
     background-color: #2253e9;
 }
-.card{
+.card-1{
     box-shadow: 3px 4px 30px 0 rgba(98, 120, 223, .1);
     padding: 50px;
     transition: .4s;
 }
-.card:hover{
+.card-1:hover{
     background-color: #2f65eb;
 }
-.card:hover h5{
+.card-1:hover h5{
     color: #8294a1;
 }
-.card:hover h1{
+.card-1:hover h1{
     color: #8294a1;
 }
-.card:hover .button a{
+.card-1:hover .button a{
     background-color: #fff;
     color: #9b8cec;
 }
-.card:hover p{
+.card-1:hover p{
     color: #fff !important;
 }
-.card:hover hr{
+.card-1:hover hr{
     color: #fff !important;
 }
-.card > hr {
+.card-1 > hr {
 	margin-right: 0px;
 	margin-left: 73px;
 	max-width: 55%;
@@ -327,7 +331,7 @@ ul li ul li a{
     color: #fff;
 }
 .newsletter-form{background-color: #f8f9fa;padding-top: 80px;}
-.newsletter-form .card-left{background-color: #3763eb;color: #fff;}
+.newsletter-form .card-left{background-color: #3763eb;color: #fff;padding: 50px;}
 .newsletter-form .card-left h2{}
 .newsletter-form .card-left p{padding: 8px 0;}
 .newsletter-form .card-left input{}
