@@ -240,10 +240,12 @@ ul li ul li a{
     background-color: #2f65eb;
 }
 .card-1:hover h5{
-    color: #8294a1;
+    color: #fff;
+    transition: 2s;
 }
 .card-1:hover h1{
-    color: #8294a1;
+    color: #fff;
+    transition: 2s;
 }
 .card-1:hover .button a{
     background-color: #fff;
